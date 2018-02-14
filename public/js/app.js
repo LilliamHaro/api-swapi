@@ -21,10 +21,31 @@ window.addEventListener('load', function() {
   function addNews() {
     const data = JSON.parse(this.responseText);
     const response = data.results;
+    let a = 0
     response.forEach(function(character) {
-      let nameCharacter = character.name ;
-      let div = document.createElement('div');
-      div.textContent = nameCharacter;
-      document.getElementById('response-container').append(div);
+      let nameCharacter = character.name;
+      let heightCharacter = character.height;
+      let birthCharacter = character.birth_year;
+      let genderCharacter = character.gender;
+      let hairCharacter = character.hair_color;
+      let massCharacter = character.mass;
+      let div = $('<div>');
+      let href = images[a];
+      let img = $('<img src="'+href+'" data-mass="'+ massCharacter+'" data-hair="'+ hairCharacter+'" data-name ="' + nameCharacter +'" data-heigth ="'+ heightCharacter+'" data-birth="'+birthCharacter+'" data-gender="'+genderCharacter+'" alt="">')
+      div.append(img);
+      // div.textContent = nameCharacter;
+      $('#response-container').append(div);
+      a++;
+      console.log(character);
+    });
+
+    $('#response-container div img').on('click', function(event) {
+      var dataName = 'Nombre: '+ $(this).data('name') + '<br>';
+      let dataHeigth = 'Altura: '+ $(this).data('heigth') + '<br>';
+      let databirth = 'Año de Nacimiento: '+ $(this).data('birth') + '<br>';
+      let datagender = 'Género: ' + $(this).data('gender') + '<br>';
+      let dataHair = 'Color de Cabello: '+ $(this).data('hair') + '<br>';
+      let dataMass = 'Peso: '+ $(this).data('mass') + ' libras <br>';
+      alert(dataName + dataHeigth + dataMass + databirth + datagender + dataHair);
     });
     };
