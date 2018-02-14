@@ -22,6 +22,9 @@ window.addEventListener('load', function() {
     const data = JSON.parse(this.responseText);
     const response = data.results;
     response.forEach(function(character) {
-      console.log(character);;
+      let nameCharacter = character.name ;
+      let div = document.createElement('div');
+      div.textContent = nameCharacter;
+      document.getElementById('response-container').append(div);
     });
     };
