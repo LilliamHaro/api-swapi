@@ -9,4 +9,4 @@ var images = [
   'https://preview.ibb.co/e7GhD7/t725.png',
   'https://image.ibb.co/cK6tLn/Biggs_HS_ANH.png',
   'https://image.ibb.co/dSAg6S/ovin.jpg',
-]
+];
