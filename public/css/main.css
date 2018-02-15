@@ -11,18 +11,21 @@ img {
 
 .container-body {
   background-image:url(../assets/images/start.jpg);
-  height: auto; 
+  height: auto;
 }
 
-.title {  
+.title {
   color: #ffff;
   font-size: 40px;
+}
+div {
+  text-align: center;
 }
 
 .p-star {
   color: #ffff;
   font-size: 20px;
-  
+
 }
 
 .flex {
