@@ -1,6 +1,16 @@
 # SWAPI
 
-> Recuerda seguir siempre esta [guía de estilos](https://github.com/Laboratoria/js-style-guide/)
+1. **Objetivo del proyecto**
+- Hacer una página web dónde se muestren los personajes de starwars utilizando la data de la api Swapi y mostrar sus datos en un modal.
 
-Que la fuerza te acompañe en este ejercicio, revisa las siguientes slides para que puedas crear esta fenómenal app para los amantes de Star Wars.
+2. **Herramientas utilizadas**
 
+- Html5
+- Css3
+- Bootstrap
+- Swappi api
+
+3. **Resultados finales**
+![image](assets/images/1.png)
+
+![image](assets/images/2.png)
