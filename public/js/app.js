@@ -40,12 +40,12 @@ window.addEventListener('load', function() {
     });
 
     $('#response-container div img').on('click', function(event) {
-      var dataName = 'Nombre: '+ $(this).data('name') + '<br>';
-      let dataHeigth = 'Altura: '+ $(this).data('heigth') + '<br>';
-      let databirth = 'Año de Nacimiento: '+ $(this).data('birth') + '<br>';
-      let datagender = 'Género: ' + $(this).data('gender') + '<br>';
-      let dataHair = 'Color de Cabello: '+ $(this).data('hair') + '<br>';
-      let dataMass = 'Peso: '+ $(this).data('mass') + ' libras <br>';
-      alert(dataName + dataHeigth + dataMass + databirth + datagender + dataHair);
+      var dataName = 'Nombre: '+ $(this).data('name');
+      let dataHeigth = 'Altura: '+ $(this).data('heigth');
+      let databirth = 'Año de Nacimiento: '+ $(this).data('birth');
+      let datagender = 'Género: ' + $(this).data('gender');
+      let dataHair = 'Color de Cabello: '+ $(this).data('hair');
+      let dataMass = 'Peso: '+ $(this).data('mass') + ' libras';
+      alert(dataName + '\n' + dataHeigth + '\n'+ dataMass + '\n'+ databirth +'\n'+ datagender +'\n'+ dataHair);
     });
     };
